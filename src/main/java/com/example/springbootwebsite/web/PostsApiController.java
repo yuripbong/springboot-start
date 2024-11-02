@@ -25,7 +25,7 @@ public class PostsApiController {
         return postsService.update(id, requestDto);
     }
 
-    // 조횐
+    // 조회
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById(@PathVariable("id") Long id) {
         return postsService.findById(id);
